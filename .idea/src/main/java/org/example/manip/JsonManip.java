@@ -67,29 +67,6 @@ public class JsonManip {
         Files.write(Paths.get(filePath), transformedJson.toString(2).getBytes());
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private static JSONObject transformerCleEtValeur(JSONObject jsonObject) {
         JSONObject transformedJson = new JSONObject();
         for (Object key : jsonObject.keySet()) {
@@ -114,7 +91,6 @@ public class JsonManip {
         }
         return value;
     }
-
 
     private static JSONArray transformerArray(JSONArray jsonArray) {
         JSONArray transformedArray = new JSONArray();

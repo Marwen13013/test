@@ -69,7 +69,7 @@ public class Lot {
         this.dateMesure = dateMesure;
     }
 
-    public String validerDate() {
+    public String valider() {
         if (nombreDroitsPassage < 0 || nombreDroitsPassage > 10) {
             return "Le nombre de droits de passage est invalide.";
         }
@@ -124,4 +124,3 @@ public class Lot {
         return Objects.hash(description);
     }
 }
-

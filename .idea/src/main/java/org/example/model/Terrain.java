@@ -60,7 +60,7 @@ public class Terrain {
             return "Le prix ne doit pas être négatif.";
         }
         for (Lot lot : lotissements) {
-            String validationMessage = lot.validerDate();
+            String validationMessage = lot.valider();
             if (validationMessage != null) {
                 return validationMessage;
             }

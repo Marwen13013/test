@@ -33,7 +33,7 @@ public class Validation {
     public static void validerLots(List<Lot> lots) {
         Lot.validerDescription(lots);
         for (Lot lot : lots) {
-            String validationMessage = lot.validerDate();
+            String validationMessage = lot.valider();
             if (validationMessage != null) {
                 throw new IllegalArgumentException(validationMessage);
             }
