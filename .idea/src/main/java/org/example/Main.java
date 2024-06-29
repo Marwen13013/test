@@ -13,10 +13,6 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) {
-        if (args.length < 2) {
-            System.out.println("Usage: java -jar Projet.jar entree.json sortie.json");
-            return;
-        }
 
         String inputFilePath = args[0];
         String outputFilePath = args[1];
