@@ -1,11 +1,9 @@
 package org.example;
 
-import org.example.manip.JsonManip;
-import org.example.model.Terrain;
-import org.example.service.EvaluationFonciereCalcul;
 import net.sf.json.JSONObject;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Classe principale pour exécuter le programme d'évaluation foncière.
@@ -25,6 +23,7 @@ public class Main {
             Terrain terrain = JsonManip.lireFichierJSON(inputFilePath);
             EvaluationFonciereCalcul service = new EvaluationFonciereCalcul();
             JSONObject result = service.calculerEvaluationFonciere(terrain);
+            EvaluationFonciereCalcul.observationsSouleves(terrain, result);
             JsonManip.ecrireFichierJSON(outputFilePath, result);
             System.out.println("Évaluation foncière calculée avec succès!");
         } catch (IOException e) {
@@ -44,4 +43,3 @@ public class Main {
         }
     }
 }
-
