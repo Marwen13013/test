@@ -4,12 +4,6 @@
 - Français
 - Anglais
 
-**Convention de Nommage :**
-- **Classes :** PascalCase
-- **Méthodes :** camelCase
-- **Variables :** camelCase
-- **Constantes :** MAJUSCULES_SÉPARÉES_PAR_DES_UNDERSCORES
-
 **Indentation et Espacement :**
 - 4 espaces par niveau d'indentation
 - Une ligne vide entre les méthodes
